@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankvidhya — Making Math Geniuses</title>
+  <meta name="description" content="Ankvidhya — Abacus, Mental Math, Vedic Math & Conceptual Learning. Building faster minds, stronger confidence & brighter futures.">
+  <meta name="theme-color" content="#D8232A">
+  <link rel="icon" href="Ank_Logo.png">
+  <style>
+    :root{
+      --red:#D8232A;
+      --navy:#101C33;
+      --yellow:#FBB03B;
+      --muted:#5B667A;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      min-height:100vh;
+      display:flex;align-items:center;justify-content:center;
+      padding:18px 14px;
+      font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--navy);
+      background:radial-gradient(circle at 50% -10%, #FFDFD2 0%, #FFF7F2 42%, #FFFFFF 100%);
+      -webkit-font-smoothing:antialiased;
+    }
+    .card{
+      width:100%;max-width:390px;
+      background:#fff;
+      border-radius:26px;
+      border:1px solid rgba(216,35,42,.10);
+      box-shadow:0 20px 50px rgba(16,28,51,.13);
+      overflow:hidden;
+      text-align:center;
+    }
+    .card::before{
+      content:"";display:block;height:5px;
+      background:linear-gradient(90deg,var(--red),var(--yellow));
+    }
+    .top{padding:22px 22px 18px;}
+
+    .logo{width:140px;height:auto;display:block;margin:0 auto 10px;}
+
+    .tagline{
+      font-size:10.5px;font-weight:700;letter-spacing:1.6px;
+      text-transform:uppercase;color:var(--red);margin-bottom:14px;
+    }
+
+    .stats{display:flex;gap:9px;margin-bottom:14px;}
+    .stat{
+      flex:1;background:#FFF5F2;border:1px solid #FFE0D6;
+      border-radius:14px;padding:9px 4px;
+    }
+    .stat b{display:block;font-size:15px;line-height:1.1;color:var(--red);}
+    .stat span{font-size:9.5px;color:var(--muted);letter-spacing:.2px;}
+
+    .about{font-size:12.5px;line-height:1.6;color:var(--muted);}
+    .about strong{color:var(--navy);}
+
+    .links{padding:0 22px 20px;display:flex;flex-direction:column;gap:10px;}
+    .link{
+      display:flex;align-items:center;gap:12px;
+      padding:13px 16px;border-radius:14px;
+      text-decoration:none;color:#fff;
+      font-size:14px;font-weight:600;letter-spacing:.2px;
+      transition:transform .18s ease, box-shadow .18s ease;
+    }
+    .link:hover{transform:translateY(-2px);}
+    .link:active{transform:translateY(0);}
+    .link svg{width:19px;height:19px;flex:none;}
+    .link .arrow{margin-left:auto;opacity:.8;font-size:14px;}
+
+    .ig{background:linear-gradient(135deg,#F9A03F,#E1306C 55%,#833AB4);
+        box-shadow:0 8px 18px rgba(225,48,108,.26);}
+    .yt{background:linear-gradient(135deg,#FF4B4B,#D8232A);
+        box-shadow:0 8px 18px rgba(216,35,42,.26);}
+    .fb{background:linear-gradient(135deg,#4A8BF5,#1877F2);
+        box-shadow:0 8px 18px rgba(24,119,242,.26);}
+
+    .footer{
+      background:var(--navy);color:#C7D0DE;
+      font-size:11.5px;letter-spacing:.3px;
+      padding:12px 16px;
+      display:flex;align-items:center;justify-content:center;gap:7px;
+    }
+    .footer b{color:#fff;font-weight:700;}
+    .footer .dot{color:var(--yellow);font-size:9px;}
+
+    @media (max-height:680px){
+      .logo{width:118px;}
+      .stats{margin-bottom:11px;}
+      .top{padding:16px 20px 14px;}
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+
+    <div class="top">
+      <!-- Logo must sit in the same folder as this file -->
+      <img src="Ank_Logo.png" alt="Ankvidhya Logo" class="logo">
+
+      <p class="tagline">Making Math Geniuses</p>
+
+      <div class="stats">
+        <div class="stat"><b>40,000+</b><span>Students</span></div>
+        <div class="stat"><b>140+</b><span>Schools</span></div>
+        <div class="stat"><b>6</b><span>World Records</span></div>
+      </div>
+
+      <p class="about">
+        <strong>Ankvidhya</strong> builds faster minds, stronger confidence and
+        brighter futures through Abacus, Mental Math, Vedic Math and
+        Conceptual Learning. Shaping today's learners into tomorrow's leaders.
+      </p>
+    </div>
+
+    <nav class="links">
+      <a class="link ig" href="https://www.instagram.com/mr.calculator?avpt=MThwNDh3dTZwaWgzNQ==" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5.5"/>
+          <circle cx="12" cy="12" r="4.2"/>
+          <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>Instagram</span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link yt" href="https://youtube.com/@akshaykhatri?si=g_BnTDM3VnSqhQl5" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/>
+        </svg>
+        <span>YouTube</span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link fb" href="https://www.facebook.com/share/1CKJ7mGScJ/?mibextid=wwXIfr" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/>
+        </svg>
+        <span>Facebook</span>
+        <span class="arrow">↗</span>
+      </a>
+    </nav>
+
+    <footer class="footer">
+      <span>Powered by</span>
+      <span class="dot">●</span>
+      <b>QMitra</b>
+    </footer>
+
+  </main>
+
+</body>
+</html>
