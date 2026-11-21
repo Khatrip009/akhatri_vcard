@@ -46,13 +46,24 @@
       text-transform:uppercase;color:var(--red);margin-bottom:14px;
     }
 
-    .stats{display:flex;gap:9px;margin-bottom:14px;}
-    .stat{
-      flex:1;background:#FFF5F2;border:1px solid #FFE0D6;
-      border-radius:14px;padding:9px 4px;
+    /* Updated 2x2 grid for 4 stats */
+    .stats{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:8px;
+      margin-bottom:14px;
     }
-    .stat b{display:block;font-size:15px;line-height:1.1;color:var(--red);}
-    .stat span{font-size:9.5px;color:var(--muted);letter-spacing:.2px;}
+    .stat{
+      background:#FFF5F2;
+      border:1px solid #FFE0D6;
+      border-radius:12px;
+      padding:10px 4px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .stat b{display:block;font-size:14.5px;line-height:1.1;color:var(--red);margin-bottom:2px;}
+    .stat span{font-size:9.5px;color:var(--muted);letter-spacing:.2px;line-height:1.2;}
 
     .about{font-size:12.5px;line-height:1.6;color:var(--muted);}
     .about strong{color:var(--navy);}
@@ -86,7 +97,7 @@
     .footer b{color:#fff;font-weight:700;}
     .footer .dot{color:var(--yellow);font-size:9px;}
 
-    @media (max-height:680px){
+    @media (max-height:700px){
       .logo{width:118px;}
       .stats{margin-bottom:11px;}
       .top{padding:16px 20px 14px;}
@@ -98,15 +109,15 @@
   <main class="card">
 
     <div class="top">
-      <!-- Logo must sit in the same folder as this file -->
       <img src="Ank_Logo.png" alt="Ankvidhya Logo" class="logo">
 
       <p class="tagline">Making Math Geniuses</p>
 
       <div class="stats">
-        <div class="stat"><b>40,000+</b><span>Students</span></div>
-        <div class="stat"><b>140+</b><span>Schools</span></div>
-        <div class="stat"><b>6</b><span>World Records</span></div>
+        <div class="stat"><b>4,50,000+</b><span>Parents</span></div>
+        <div class="stat"><b>550+</b><span>Schools</span></div>
+        <div class="stat"><b>12,500+</b><span>Teachers</span></div>
+        <div class="stat"><b>55M+</b><span>Social Reach</span></div>
       </div>
 
       <p class="about">
