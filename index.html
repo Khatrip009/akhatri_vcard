@@ -39,14 +39,26 @@
     }
     .top{padding:22px 22px 18px;}
 
-    .logo{width:140px;height:auto;display:block;margin:0 auto 10px;}
+    /* Dual Logo Layout */
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 0 auto 12px;
+    }
+    .logo {
+      max-height: 45px;
+      width: auto;
+      display: block;
+    }
 
     .tagline{
       font-size:10.5px;font-weight:700;letter-spacing:1.6px;
       text-transform:uppercase;color:var(--red);margin-bottom:14px;
     }
 
-    /* Updated 2x2 grid for 4 stats */
+    /* 2x2 Stats Grid */
     .stats{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -68,6 +80,7 @@
     .about{font-size:12.5px;line-height:1.6;color:var(--muted);}
     .about strong{color:var(--navy);}
 
+    /* Links */
     .links{padding:0 22px 20px;display:flex;flex-direction:column;gap:10px;}
     .link{
       display:flex;align-items:center;gap:12px;
@@ -88,6 +101,7 @@
     .fb{background:linear-gradient(135deg,#4A8BF5,#1877F2);
         box-shadow:0 8px 18px rgba(24,119,242,.26);}
 
+    /* Footer */
     .footer{
       background:var(--navy);color:#C7D0DE;
       font-size:11.5px;letter-spacing:.3px;
@@ -97,8 +111,9 @@
     .footer b{color:#fff;font-weight:700;}
     .footer .dot{color:var(--yellow);font-size:9px;}
 
+    /* Small Screen Adjustments */
     @media (max-height:700px){
-      .logo{width:118px;}
+      .logo{max-height: 38px;}
       .stats{margin-bottom:11px;}
       .top{padding:16px 20px 14px;}
     }
@@ -109,10 +124,15 @@
   <main class="card">
 
     <div class="top">
-      <img src="Ank_Logo.png" alt="Ankvidhya Logo" class="logo">
+      <!-- Two Logos -->
+      <div class="logo-container">
+        <img src="Ank_Logo.png" alt="Ankvidhya Logo" class="logo">
+        <img src="akshay_khatri.png" alt="Akshay Khatri Logo" class="logo">
+      </div>
 
       <p class="tagline">Making Math Geniuses</p>
 
+      <!-- Updated Stats -->
       <div class="stats">
         <div class="stat"><b>4,50,000+</b><span>Parents</span></div>
         <div class="stat"><b>550+</b><span>Schools</span></div>
